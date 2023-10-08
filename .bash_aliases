@@ -23,4 +23,6 @@ alias yt-360="yt-dlp -S 'res:360'"
 alias up="sudo apt update && sudo apt upgrade"
 
 # sudo snap refresh
-# sudo flatpak update
+
+# you don't need sudo for flatpak
+# flatpak update
