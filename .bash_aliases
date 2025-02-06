@@ -26,3 +26,11 @@ alias up="sudo apt update && sudo apt upgrade"
 
 # you don't need sudo for flatpak
 # flatpak update
+
+# Spotdl - download music from spotify
+spotdl-playlist() { 
+	spotdl download "$1" --output "{artists} - {title}"
+}
+spotdl-artist() { 
+	spotdl download "$1" --output "{artist}/{album}/{disc-number}:{track-number} - {title}.{output-ext}"
+}
